@@ -1,0 +1,22 @@
+.about {
+    height: 50vh;
+    color: $color-grey-dark-1;
+    font-size: 1.6rem;
+
+    display: flex;
+
+    & > * {
+        margin: 6.6rem;
+    }
+}
+
+.summary {
+    flex: 2;
+}
+
+.skills {
+    flex: 1;
+    &__list {
+        list-style: none;
+    }
+}

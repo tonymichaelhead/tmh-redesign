@@ -16,6 +16,9 @@ body {
   font-family: "PT Sans Caption", sans-serif;
   color: white; }
 
+h4 {
+  font-size: 3.3rem; }
+
 .btn {
   background-color: #f0355e;
   padding: .5rem;
@@ -66,7 +69,8 @@ body {
   .hero__header {
     font-size: 6.4rem;
     text-transform: uppercase;
-    font-weight: 300; }
+    font-weight: 300;
+    width: 73rem; }
   .hero__subheader {
     font-size: 4rem; }
   .hero__btn {
@@ -82,3 +86,31 @@ body {
     transform: translateX(-50%); }
     .hero__cta__arrow {
       font-size: 6.6rem; }
+
+.about {
+  height: 50vh;
+  color: #1b1b1b;
+  font-size: 1.6rem;
+  display: flex; }
+  .about > * {
+    margin: 6.6rem; }
+
+.summary {
+  flex: 2; }
+
+.skills {
+  flex: 1; }
+  .skills__list {
+    list-style: none; }
+
+.projects {
+  height: 100vh;
+  color: #1b1b1b;
+  font-size: 1.6rem; }
+  .projects__grid {
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .projects__grid__preview {
+      background-color: #797575;
+      margin: 2.7rem; }

@@ -1,0 +1,16 @@
+.projects {
+    height: 100vh;
+    color: $color-grey-dark-1;
+    font-size: 1.6rem;
+    
+    &__grid {
+        height: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        &__preview {
+            background-color: $color-grey-light-1;
+            margin: 2.7rem;
+        }
+    }    
+}
