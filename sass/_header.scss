@@ -1,0 +1,48 @@
+.nav {
+    display: flex;
+
+    
+    &__left {
+        display: flex;
+        margin: 1.2rem;
+    }
+
+    &__logo--text {
+        font-size: 3.5rem;
+    }
+
+    &__info {
+        font-size: 1.8rem;
+        margin-left: 1.3rem;
+        margin-top: .8rem;
+    }
+
+    &__logo {
+        align-self: flex-start;
+        border-radius: 50%;
+        width: 7.7rem
+    }
+
+    &__right {
+        margin-left: auto;
+        display: flex;
+    }
+
+    &__item {
+        list-style: none;
+        margin: 1rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: $color-primary;
+        font-size: 3.2rem;
+        text-transform: lowercase;
+    }
+
+    &__link:hover {
+        color: $color-secondary;
+    }
+
+}

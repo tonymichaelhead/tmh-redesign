@@ -1,0 +1,46 @@
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url(../img/nikita-vantorin-417627-unsplash.jpg);
+    height: 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    &__body {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__header {
+        font-size: 6.4rem;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    &__subheader {
+        font-size: 4rem;
+    }
+
+    &__btn {
+        margin-top: 3rem;
+        color: $color-primary;
+        font-size: 3.2rem;
+        font-family: $font-primary;
+        text-transform: uppercase;
+    }
+
+    &__cta {
+        position: absolute;
+        bottom: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &__arrow {
+            font-size: 6.6rem;
+        }
+    }
+}

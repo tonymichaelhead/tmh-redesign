@@ -1,3 +1,12 @@
+
+// COLOR
+$color-primary: white;
+$color-secondary: rgb(240, 53, 94);
+
+// FONT
+// $font-primary: 'Nunito', sans-serif;
+$font-primary: 'PT Sans Caption', sans-serif;
+
 *,
 *::before,
 *::after {
@@ -6,14 +15,18 @@
     box-sizing: inherit;
 }
 
+body, html {
+    height: 100%;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
 
 body {
-    // font-family: $font-primary;
-    // color: $color-grey-dark-2;
+    font-family: $font-primary;
+    color: $color-primary;
     // font-weight: 300;
     // line-height: 1.6;
 }
