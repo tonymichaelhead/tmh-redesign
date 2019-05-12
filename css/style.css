@@ -41,6 +41,7 @@ h4 {
     width: 7.7rem; }
   .nav__right {
     margin-left: auto;
+    margin-right: 1.7rem;
     display: flex; }
   .nav__item {
     list-style: none;
@@ -105,12 +106,13 @@ h4 {
 
 .projects {
   height: 100vh;
+  margin: 6.6rem;
   color: #1b1b1b;
   font-size: 1.6rem; }
   .projects__grid {
-    height: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
     .projects__grid__preview {
       background-color: #797575;
-      margin: 2.7rem; }
+      height: 19rem;
+      margin: 1px; }

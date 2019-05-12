@@ -1,16 +1,18 @@
 .projects {
     height: 100vh;
+    margin: 6.6rem;
     color: $color-grey-dark-1;
     font-size: 1.6rem;
     
     &__grid {
-        height: 80%;
+        // height: 80%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         
         &__preview {
             background-color: $color-grey-light-1;
-            margin: 2.7rem;
+            height: 19rem;
+            margin: 1px;
         }
     }    
 }
