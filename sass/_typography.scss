@@ -7,3 +7,22 @@ h4 {
     padding: .5rem;
     border: none;
 }
+
+ion-icon {
+    font-size: 32px;
+}
+
+.social-icon {
+    padding: .8rem;
+    padding-bottom: .5rem;
+    margin: 0 1.4rem;
+    
+
+    &--linked {
+        background-color: #1e2a63;
+    }
+
+    &--git {
+        background-color: #080808;
+    }
+}

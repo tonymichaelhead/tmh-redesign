@@ -24,6 +24,18 @@ h4 {
   padding: .5rem;
   border: none; }
 
+ion-icon {
+  font-size: 32px; }
+
+.social-icon {
+  padding: .8rem;
+  padding-bottom: .5rem;
+  margin: 0 1.4rem; }
+  .social-icon--linked {
+    background-color: #1e2a63; }
+  .social-icon--git {
+    background-color: #080808; }
+
 .nav {
   display: flex; }
   .nav__left {
@@ -116,3 +128,18 @@ h4 {
       background-color: #797575;
       height: 19rem;
       margin: 1px; }
+
+.footer {
+  height: 30vh;
+  background-color: #797575;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer__social-media {
+    list-style: none;
+    display: flex;
+    align-items: flex-start; }
+  .footer__copy {
+    text-transform: uppercase;
+    margin-left: 1.3rem;
+    font-size: 1.4rem; }

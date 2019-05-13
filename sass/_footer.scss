@@ -1,0 +1,21 @@
+.footer {
+    height: 30vh;
+    background-color: $color-grey-light-1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__social-media {
+        list-style: none;
+
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__copy {
+        text-transform: uppercase;
+        margin-left: 1.3rem;
+        font-size: 1.4rem;
+    }
+}
