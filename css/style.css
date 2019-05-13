@@ -32,7 +32,7 @@ ion-icon {
   padding-bottom: .5rem;
   margin: 0 1.4rem; }
   .social-icon--linked {
-    background-color: #1e2a63; }
+    background-color: #0058a7; }
   .social-icon--git {
     background-color: #080808; }
 
@@ -131,7 +131,7 @@ ion-icon {
 
 .footer {
   height: 30vh;
-  background-color: #797575;
+  background-color: #060606d6;
   display: flex;
   justify-content: center;
   align-items: center; }
