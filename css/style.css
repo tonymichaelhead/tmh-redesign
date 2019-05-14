@@ -33,8 +33,8 @@ ion-icon {
   font-size: 32px; }
 
 .social-icon {
-  padding: .8rem;
-  padding-bottom: .5rem;
+  padding: 2px;
+  padding-bottom: 0;
   margin: 0 .6rem; }
   .social-icon--linked {
     background-color: #0058a7; }
