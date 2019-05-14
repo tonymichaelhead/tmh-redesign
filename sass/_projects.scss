@@ -1,18 +1,21 @@
 .projects {
     height: 100vh;
-    margin: 6.6rem;
+    background-color: $color-grey-light-3;
     color: $color-grey-dark-1;
     font-size: 1.6rem;
+    padding: 6.6rem 0; 
     
     &__grid {
         // height: 80%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        
+        width: 75%;
+        margin: 0 auto;
+
         &__preview {
             background-color: $color-grey-light-1;
             height: 30rem;
-            margin: 1px;
+            margin: 0;
             display: block;
             
             img {
