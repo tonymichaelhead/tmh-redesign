@@ -2,11 +2,13 @@
     height: 50vh;
     color: $color-grey-dark-1;
     font-size: 1.6rem;
-
-    display: flex;
-
+    
     & > * {
         margin: 6.6rem;
+    }
+
+    &__flex {
+        display: flex;
     }
 }
 

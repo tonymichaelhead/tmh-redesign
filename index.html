@@ -41,29 +41,32 @@
         </section>
 
         <section class="about">
-            <div class="summary">
-                <h4>I do things</h4>
-                <p>
-                    Let me tell you about the things I do. I do several of them.
-                    My favorite of which is to code and watch game of thrones. That's
-                    it.
-                </p>
-            </div>
-            <div class="skills">
-                <h4>Skills</h4>
-                <ul class="skills__list">
-                    <li>Javascript</li>
-                    <li>React</li>
-                    <li>MySQL</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Git</li>
-                </ul> 
+            <h3>About</h3>
+            <div class="about__flex">
+                <div class="summary">
+                    <h4>I do things</h4>
+                    <p>
+                        Let me tell you about the things I do. I do several of them.
+                        My favorite of which is to code and watch game of thrones. That's
+                        it.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <ul class="skills__list">
+                        <li>Javascript</li>
+                        <li>React</li>
+                        <li>MySQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Git</li>
+                    </ul> 
+                </div>
             </div>
         </section>
 
         <section class="projects">
-            <h4>Recent projects</h4>
+            <h3>Recent projects</h3>
             <div class="projects__grid">
                 <figure class="projects__grid projects__grid__preview">
                     <img src="img/forest-ai_thumbnail.jpg" alt="Forsest AI project thumbnail">
@@ -87,7 +90,7 @@
         </section>
 
         <section class="contact">
-            <h3>Contact</h3>
+            <h3 class="contact__header">Contact</h3>
             <form action="#" class="contact__form">
                 <div class="contact__form-control">
                     <input type="text" name="name" placeholder="Name">
@@ -96,22 +99,27 @@
                     <input type="text" name="email" placeholder="Enter your email address">
                 </div>
                 <div class="contact__form-control">
-                    <textarea name="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
                 </div>
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn contact__btn--submit">Submit</button>
             </form>
         </section>
 
         <section class="footer">
-            <ul class="footer__social-media">
-                <li class="social-icon social-icon--linked">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </li>
-                <li class="social-icon social-icon--git">
-                    <ion-icon name="logo-github"></ion-icon>
-                </li>
-            </ul>
-            <p class="footer__copy">Tony Michael Head &copy;2019</p>
+            <div class="footer__back-to-top">
+                &#8607;
+            </div>
+            <div class="footer__flex">
+                <ul class="footer__social-media">
+                    <li class="social-icon social-icon--linked">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </li>
+                    <li class="social-icon social-icon--git">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </li>
+                </ul>
+                <p class="footer__copy">Tony Michael Head &copy;2019</p>
+            </div>
         </section>
 
         <!-- Web fonts -->
