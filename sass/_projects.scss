@@ -4,6 +4,10 @@
     color: $color-grey-dark-1;
     font-size: 1.6rem;
     padding: 6.6rem 0; 
+
+    &__header {
+        margin-bottom: 6.6rem;
+    }
     
     &__grid {
         // height: 80%;
@@ -26,3 +30,5 @@
         }
     }    
 }
+
+// TODO: Add in shuffle.js for grid switchability

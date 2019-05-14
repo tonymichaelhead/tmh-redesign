@@ -113,6 +113,8 @@ ion-icon {
     margin: 6.6rem; }
   .about__flex {
     display: flex; }
+  .about__header {
+    margin-bottom: 6.6rem; }
 
 .summary {
   flex: 2; }
@@ -128,6 +130,8 @@ ion-icon {
   color: #1b1b1b;
   font-size: 1.6rem;
   padding: 6.6rem 0; }
+  .projects__header {
+    margin-bottom: 6.6rem; }
   .projects__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
