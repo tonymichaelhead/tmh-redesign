@@ -1,6 +1,5 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 
-
 var Shuffle = require('shufflejs');
 var element = document.querySelector('.projects__grid');
 var sizer = element.querySelector('.my-sizer-element');
@@ -10,39 +9,33 @@ var shuffleInstance = new Shuffle(element, {
   sizer: sizer // could also be a selector: '.my-sizer-element'
 });
 
-// Project Grid
-var nav1 = document.querySelector('.nav--1');
-var nav2 = document.querySelector('.nav--2');
-
+// Project nav
 document.getElementById('nav--1')
     .addEventListener('click', filterProjects.bind(shuffleInstance, 'all'));
 
-    document.getElementById('nav--2')
+document.getElementById('nav--2')
     .addEventListener('click', filterProjects.bind(shuffleInstance, 'react'));
 
-// nav1.onclick = filterProjects
-//     .bind(shuffleInstance, 'all');
+document.getElementById('nav--3')
+    .addEventListener('click', filterProjects.bind(shuffleInstance, ''));
 
-// nav2.onclick = filterProjects
-//     .bind(shuffleInstance, 'react');
+document.getElementById('nav--4')
+    .addEventListener('click', filterProjects.bind(shuffleInstance, ''));
 
+// METHODS
 function filterProjects(filter, e) {
-    // iterate over other links and remove active
     var navLinks = document.getElementsByClassName('projects__nav__item');
-    console.log(navLinks)
-    navLinks.forEach(function(el) {
-        el.className = el.className.replace(' active', '');
-    });
-
-    // apply css to active link and 
+    
+    for(var i = 0; i < navLinks.length; i++) {
+        navLinks[i].className = navLinks[i].className.replace(' active', '');
+    }
+    
     e.currentTarget.className += ' active';
     
-
-    // pass filter to filter
     if (filter === 'all') {
         filter = Shuffle.ALL_ITEMS;
     }
-
+    
     shuffleInstance.filter(filter);
 }
 
