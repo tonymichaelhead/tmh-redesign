@@ -133,19 +133,22 @@ ion-icon {
   .projects__header {
     margin-bottom: 6.6rem; }
   .projects__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     width: 75%;
     margin: 0 auto; }
     .projects__grid__preview {
       background-color: #797575;
+      position: relative;
+      float: left;
       height: 30rem;
+      width: 33.3333%;
       margin: 0;
       display: block; }
       .projects__grid__preview img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+    .projects__grid .my-sizer-element {
+      width: 33.3333%; }
 
 .contact {
   height: 78vh;

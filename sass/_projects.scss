@@ -11,14 +11,17 @@
     
     &__grid {
         // height: 80%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
         width: 75%;
         margin: 0 auto;
 
         &__preview {
             background-color: $color-grey-light-1;
+            position: relative;
+            float: left;
             height: 30rem;
+            width: 33.3333%;
             margin: 0;
             display: block;
             
@@ -28,7 +31,12 @@
                 object-fit: cover;
             }
         }
-    }    
+
+        .my-sizer-element {
+            width: 33.3333%;
+        }
+    }
+    
 }
 
 // TODO: Add in shuffle.js for grid switchability
