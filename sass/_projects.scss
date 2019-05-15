@@ -39,20 +39,25 @@
 
     &__nav {
         list-style: none;
-        text-transform: uppercase;
+        text-transform: lowercase;
         font-size: 2.8rem;
         
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: flex-end;
+        height: 2.8rem;
+        margin-bottom: 2rem;
 
         &__item {
+            margin: 0 2.1rem;
             cursor: pointer;
         }
 
         .active {
             font-weight: bold;
-            font-size: 4rem;
-            color: #ff0e84;
+            font-size: 3.3rem;
+            // color: #ff0e84;
+            text-decoration: underline;
             transition: all .3s ease;
         }
     }
