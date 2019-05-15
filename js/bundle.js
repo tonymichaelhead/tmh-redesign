@@ -11,15 +11,40 @@ var shuffleInstance = new Shuffle(element, {
 });
 
 // Project Grid
-var btnAll = document.querySelector('.btn--all');
-var btnReact = document.querySelector('.btn--react');
+var nav1 = document.querySelector('.nav--1');
+var nav2 = document.querySelector('.nav--2');
 
-btnAll.onclick = shuffleInstance.filter
-    .bind(shuffleInstance, Shuffle.ALL_ITEMS);
+document.getElementById('nav--1')
+    .addEventListener('click', filterProjects.bind(shuffleInstance, 'all'));
 
-btnReact.onclick = shuffleInstance.filter
-    .bind(shuffleInstance, 'react');
+    document.getElementById('nav--2')
+    .addEventListener('click', filterProjects.bind(shuffleInstance, 'react'));
 
+// nav1.onclick = filterProjects
+//     .bind(shuffleInstance, 'all');
+
+// nav2.onclick = filterProjects
+//     .bind(shuffleInstance, 'react');
+
+function filterProjects(filter, e) {
+    // iterate over other links and remove active
+    var navLinks = document.getElementsByClassName('projects__nav__item');
+    console.log(navLinks)
+    navLinks.forEach(function(el) {
+        el.className = el.className.replace(' active', '');
+    });
+
+    // apply css to active link and 
+    e.currentTarget.className += ' active';
+    
+
+    // pass filter to filter
+    if (filter === 'all') {
+        filter = Shuffle.ALL_ITEMS;
+    }
+
+    shuffleInstance.filter(filter);
+}
 
 },{"shufflejs":2}],2:[function(require,module,exports){
 (function (global, factory) {

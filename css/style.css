@@ -149,6 +149,18 @@ ion-icon {
         object-fit: cover; }
     .projects__grid .my-sizer-element {
       width: 33.3333%; }
+  .projects__nav {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: space-evenly; }
+    .projects__nav__item {
+      cursor: pointer; }
+    .projects__nav .active {
+      font-weight: bold;
+      font-size: 4rem;
+      color: #ff0e84; }
 
 .contact {
   height: 78vh;

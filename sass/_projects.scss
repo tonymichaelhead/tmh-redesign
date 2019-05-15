@@ -36,6 +36,25 @@
             width: 33.3333%;
         }
     }
+
+    &__nav {
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 2.8rem;
+        
+        display: flex;
+        justify-content: space-evenly;
+
+        &__item {
+            cursor: pointer;
+        }
+
+        .active {
+            font-weight: bold;
+            font-size: 4rem;
+            color: #ff0e84;
+        }
+    }
     
 }
 
