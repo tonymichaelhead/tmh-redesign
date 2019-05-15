@@ -1,7 +1,7 @@
 .projects {
     height: 100vh;
-    background-color: $color-grey-light-3;
-    color: $color-grey-dark-1;
+    background-color: $color-grey-dark-1;
+    color: $color-grey-light-3;
     font-size: 1.6rem;
     padding: 6.6rem 0; 
 
@@ -56,8 +56,7 @@
         .active {
             font-weight: bold;
             font-size: 3.3rem;
-            // color: #ff0e84;
-            text-decoration: underline;
+            color: $color-secondary;
             transition: all .3s ease;
         }
     }

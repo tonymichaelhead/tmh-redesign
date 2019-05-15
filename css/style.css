@@ -126,8 +126,8 @@ ion-icon {
 
 .projects {
   height: 100vh;
-  background-color: #f2f0ff;
-  color: #1b1b1b;
+  background-color: #1b1b1b;
+  color: #f2f0ff;
   font-size: 1.6rem;
   padding: 6.6rem 0; }
   .projects__header {
@@ -164,7 +164,7 @@ ion-icon {
     .projects__nav .active {
       font-weight: bold;
       font-size: 3.3rem;
-      text-decoration: underline;
+      color: #f0355e;
       transition: all .3s ease; }
 
 .contact {
