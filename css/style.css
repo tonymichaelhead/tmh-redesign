@@ -160,7 +160,8 @@ ion-icon {
     .projects__nav .active {
       font-weight: bold;
       font-size: 4rem;
-      color: #ff0e84; }
+      color: #ff0e84;
+      transition: all .3s ease; }
 
 .contact {
   height: 78vh;
