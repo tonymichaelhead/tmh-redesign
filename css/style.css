@@ -117,6 +117,13 @@ ion-icon {
   .about__header {
     margin-bottom: 6.6rem; }
 
+.highlights {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; }
+  .highlights__item {
+    text-align: center; }
+
 .summary {
   flex: 2;
   display: flex;
@@ -126,6 +133,13 @@ ion-icon {
     width: 66.6666%; }
   .summary__img {
     border-radius: 50%; }
+
+.bio {
+  display: flex; }
+  .bio__text--big {
+    flex: 1; }
+  .bio__text--small {
+    flex: 1; }
 
 .skills {
   display: flex;

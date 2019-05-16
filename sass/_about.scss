@@ -16,6 +16,20 @@
     }
 }
 
+.highlights {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    &__item {
+        text-align: center;
+
+        .icon {
+            // font-size: 7.8rem;
+        }
+    }
+}
+
 .summary {
     flex: 2;
     display: flex;
@@ -28,6 +42,18 @@
 
     &__img {
         border-radius: 50%;
+    }
+}
+
+.bio {
+    display: flex;
+
+    &__text--big {
+        flex: 1;
+    }
+
+    &__text--small {
+        flex: 1;
     }
 }
 
