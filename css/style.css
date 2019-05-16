@@ -19,7 +19,8 @@ body {
 h3 {
   font-size: 4rem;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 4px; }
 
 h4 {
   font-size: 3.3rem; }
@@ -106,7 +107,7 @@ ion-icon {
       font-size: 6.6rem; }
 
 .about {
-  height: 50vh;
+  height: 100vh;
   color: #1b1b1b;
   font-size: 1.6rem; }
   .about > * {
@@ -117,12 +118,21 @@ ion-icon {
     margin-bottom: 6.6rem; }
 
 .summary {
-  flex: 2; }
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .summary__text {
+    width: 66.6666%; }
+  .summary__img {
+    border-radius: 50%; }
 
 .skills {
-  flex: 1; }
+  display: flex;
+  justify-content: flex-end; }
   .skills__list {
-    list-style: none; }
+    list-style: none;
+    margin: 33.3333; }
 
 .projects {
   height: 100vh;
@@ -146,7 +156,10 @@ ion-icon {
       .projects__grid__preview img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: all .2s; }
+        .projects__grid__preview img:hover {
+          filter: blur(10px) brightness(20%); }
     .projects__grid .my-sizer-element {
       width: 33.3333%; }
   .projects__nav {

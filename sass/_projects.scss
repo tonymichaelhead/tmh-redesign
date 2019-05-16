@@ -24,12 +24,20 @@
             width: 33.3333%;
             margin: 0;
             display: block;
-            
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                transition: all .2s;
+                
+                &:hover {
+                    filter: blur(10px) brightness(20%);
+                    // transform: translateX(-4rem) scale(1.2); 
+                    // transform: scale(1.2); 
+                }
             }
+
         }
 
         .my-sizer-element {
