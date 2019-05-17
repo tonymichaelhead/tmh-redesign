@@ -42,14 +42,19 @@
 
     &__img {
         border-radius: 50%;
+        display: block;
+        margin: 0 auto;
     }
 }
 
 .bio {
+    height: 50vh;
     display: flex;
+    align-items: center;
 
     &__text--big {
         flex: 1;
+        font-size: 6.1rem;
     }
 
     &__text--small {

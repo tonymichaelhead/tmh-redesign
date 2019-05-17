@@ -13,29 +13,31 @@
         <title>tonymichaelhead.com</title>
     </head>
     <body>
-        <section class="hero">
-            <nav class="nav">
-                <div class="nav__left">
-                    <!-- <span class="nav__logo--text">tmh {😎}</span> -->
-                    <span class="nav__logo--text">tmh {}</span>
+        <section class="header">
+            <div class="hero">
+                <nav class="nav">
+                    <div class="nav__left">
+                        <!-- <span class="nav__logo--text">tmh {😎}</span> -->
+                        <span class="nav__logo--text">tmh {}</span>
+                    </div>
+                    <ul class="nav__right">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Work</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="hero__body">
+                    <h1 class="hero__header">Software Developer</h1>
+                    <p class="hero__subheader">and an all around renassiance man</p>
+                    <button class="btn hero__btn">Let's go &darr;</button>
                 </div>
-                <ul class="nav__right">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Work</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="hero__body">
-                <h1 class="hero__header">Software Developer</h1>
-                <p class="hero__subheader">and an all around renassiance man</p>
-                <button class="btn hero__btn">Let's go &darr;</button>
             </div>
 
             <!-- <div class="hero__cta">
@@ -73,16 +75,19 @@
             </ul>
             <div class="bio">
                 <p class="bio__text--big">
-                    Hey, I'm Tony.
+                    Hey, I'm Tony. Pleased to make your acquaintance.
                 </p>
-                <p class="bio__text--small">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    In interdum lacus vel dolor porttitor rutrum. Pellentesque 
-                    commodo metus dui, eget tempus enim ultrices ac. Morbi aliquam 
-                    eget neque et maximus. Sed fermentum enim vitae scelerisque efficitur. 
-                    Maecenas iaculis ligula ante, eget finibus dui aliquam feugiat. 
-                    Duis pretium tristique enim, consequat dictum leo gravida sed.
-                </p>
+                <div class="bio__text--small">
+                    <img src="img/tony_avatar.jpg" alt="Tony Michael Head avatar" class="summary__img">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In interdum lacus vel dolor porttitor rutrum. Pellentesque 
+                        commodo metus dui, eget tempus enim ultrices ac. Morbi aliquam 
+                        eget neque et maximus. Sed fermentum enim vitae scelerisque efficitur. 
+                        Maecenas iaculis ligula ante, eget finibus dui aliquam feugiat. 
+                        Duis pretium tristique enim, consequat dictum leo gravida sed.
+                    </p>
+                </div>
             </div>
             <!-- <div class="about__flex">
                 <div class="summary">
@@ -108,34 +113,36 @@
         </section>
 
         <section class="projects">
-            <h3 class="projects__header">Projects</h3>
-                <ul class="projects__nav">
-                    <li class="projects__nav__item active" id="nav--1" title="All">All</li>
-                    <li class="projects__nav__item" id="nav--2" title="Javscript">Javascript</li>
-                    <li class="projects__nav__item" id="nav--3">React</li>
-                    <li class="projects__nav__item" id="nav--4">Games</li>
+            <div class="projects__container">
+                <h3 class="projects__container__header">Projects</h3>
+                <ul class="projects__container__nav">
+                    <li class="projects__container__nav__item active" id="nav--1" title="All">All</li>
+                    <li class="projects__container__nav__item" id="nav--2" title="Javscript">Javascript</li>
+                    <li class="projects__container__nav__item" id="nav--3">React</li>
+                    <li class="projects__container__nav__item" id="nav--4">Games</li>
                 </ul>
-                <div class="projects__grid">
-                    <figure class="projects__grid__preview picture-item" data-groups='["react"]'>
+                <div class="projects__container__grid">
+                    <figure class="projects__container__grid__preview picture-item" data-groups='["react"]'>
                         <img src="img/forest-ai_thumbnail.jpg" alt="Forsest AI project thumbnail">
                     </figure>
-                    <figure class="projects__grid__preview picture-item" data-groups='["react"]'>
+                    <figure class="projects__container__grid__preview picture-item" data-groups='["react"]'>
                         <img src="img/legatum.png" alt="Forsest AI project thumbnail">                    
                     </figure>
-                    <figure class="projects__grid__preview picture-item" data-groups='["poop"]'>
+                    <figure class="projects__container__grid__preview picture-item" data-groups='["poop"]'>
                         <img src="img/tortamigo.png" alt="Forest AI project thumbnail">
                     </figure>
-                    <figure class="projects__grid__preview picture-item" data-groups='["react"]'>
+                    <figure class="projects__container__grid__preview picture-item" data-groups='["react"]'>
                         <img src="img/boomboomcats.png" alt="Forsest AI project thumbnail">
                     </figure>
-                    <figure class="projects__grid__preview picture-item" data-groups='["react"]'>
+                    <figure class="projects__container__grid__preview picture-item" data-groups='["react"]'>
                         <img src="img/forest-ai_thumbnail.jpg" alt="Forsest AI project thumbnail">
                     </figure>
-                    <figure class="projects__grid__preview picture-item" data-groups='["poop"]'>
+                    <figure class="projects__container__grid__preview picture-item" data-groups='["poop"]'>
                         <img src="img/landmrk_cover.png" alt="Forsest AI project thumbnail">
                     </figure>
                     <div class="my-sizer-element"></div>
                 </div>
+            </div>
         </section>
 
         <section class="contact">

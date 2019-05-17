@@ -72,12 +72,16 @@ ion-icon {
   .nav__link:hover {
     color: #f0355e; }
 
-.hero {
+.header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/nikita-vantorin-417627-unsplash.jpg);
-  height: 100%;
+  height: 117vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100vh); }
+
+.hero {
+  height: 100vh;
   position: relative; }
   .hero__body {
     position: absolute;
@@ -132,12 +136,17 @@ ion-icon {
   .summary__text {
     width: 66.6666%; }
   .summary__img {
-    border-radius: 50%; }
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; }
 
 .bio {
-  display: flex; }
+  height: 50vh;
+  display: flex;
+  align-items: center; }
   .bio__text--big {
-    flex: 1; }
+    flex: 1;
+    font-size: 6.1rem; }
   .bio__text--small {
     flex: 1; }
 
@@ -149,50 +158,57 @@ ion-icon {
     margin: 33.3333; }
 
 .projects {
-  height: 100vh;
-  background-color: #1b1b1b;
-  color: #f2f0ff;
-  font-size: 1.6rem;
-  padding: 6.6rem 0; }
-  .projects__header {
-    margin-bottom: 6.6rem; }
-  .projects__grid {
-    width: 75%;
-    margin: 0 auto; }
-    .projects__grid__preview {
-      background-color: #797575;
-      position: relative;
-      float: left;
-      height: 30rem;
-      width: 33.3333%;
-      margin: 0;
-      display: block; }
-      .projects__grid__preview img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: all .2s; }
-        .projects__grid__preview img:hover {
-          filter: blur(10px) brightness(20%); }
-    .projects__grid .my-sizer-element {
-      width: 33.3333%; }
-  .projects__nav {
-    list-style: none;
-    text-transform: lowercase;
-    font-size: 2.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 2.8rem;
-    margin-bottom: 2rem; }
-    .projects__nav__item {
-      margin: 0 2.1rem;
-      cursor: pointer; }
-    .projects__nav .active {
-      font-weight: bold;
-      font-size: 3.3rem;
-      color: #f0355e;
-      transition: all .3s ease; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/nikita-vantorin-417627-unsplash.jpg);
+  height: 117vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100vh); }
+  .projects__container {
+    height: 100vh;
+    background-color: #1b1b1b;
+    color: #f2f0ff;
+    font-size: 1.6rem;
+    padding: 6.6rem 0; }
+    .projects__container__header {
+      margin-bottom: 6.6rem; }
+    .projects__container__grid {
+      width: 75%;
+      margin: 0 auto; }
+      .projects__container__grid__preview {
+        background-color: #797575;
+        position: relative;
+        float: left;
+        height: 30rem;
+        width: 33.3333%;
+        margin: 0;
+        display: block; }
+        .projects__container__grid__preview img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all .2s; }
+          .projects__container__grid__preview img:hover {
+            filter: blur(10px) brightness(20%); }
+      .projects__container__grid .my-sizer-element {
+        width: 33.3333%; }
+    .projects__container__nav {
+      list-style: none;
+      text-transform: lowercase;
+      font-size: 2.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 2.8rem;
+      margin-bottom: 2rem; }
+      .projects__container__nav__item {
+        margin: 0 2.1rem;
+        cursor: pointer; }
+      .projects__container__nav .active {
+        font-weight: bold;
+        font-size: 3.3rem;
+        color: #f0355e;
+        transition: all .3s ease; }
 
 .contact {
   height: 78vh;
