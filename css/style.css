@@ -111,9 +111,8 @@ ion-icon {
       font-size: 6.6rem; }
 
 .about {
-  height: 81vh;
   max-width: 120rem;
-  margin: 0 auto;
+  margin: 11.7rem auto;
   color: #1b1b1b;
   font-size: 1.6rem; }
   .about > * {
@@ -126,17 +125,19 @@ ion-icon {
 .highlights {
   list-style: none;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
   .highlights__item {
-    text-align: center; }
+    text-align: center;
+    margin: 1.5rem; }
     .highlights__item h4 {
       font-weight: 100;
       font-size: 2.7rem;
-      background-color: #1a1a1a;
-      color: #9aefff;
+      background-color: #060606d6;
+      color: #3ae6ce;
       text-transform: uppercase;
       display: inline-block;
-      padding: 0 1.4rem; }
+      padding: .6rem 1.4rem; }
 
 .summary {
   flex: 2;
@@ -151,17 +152,17 @@ ion-icon {
     margin: 2.2rem auto; }
 
 .bio {
-  height: 50vh;
   width: 80%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
   .bio__text--big {
-    flex: 1;
+    width: 44rem;
     font-size: 6.1rem; }
   .bio__text--small {
-    flex: 1; }
+    width: 44rem; }
 
 .skills {
   display: flex;
@@ -173,11 +174,17 @@ ion-icon {
 .projects {
   clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%); }
   .projects__container {
-    height: 100vh;
+    min-height: 155vh;
     background-color: #1b1b1b;
     color: #f2f0ff;
     font-size: 1.6rem;
     padding: 6.6rem 0; }
+    @media (max-width: 1200px) {
+      .projects__container {
+        height: 135rem; } }
+    @media (max-width: 900px) {
+      .projects__container {
+        height: 220rem; } }
     .projects__container__header {
       margin: 6.6rem 0; }
     .projects__container__grid {
@@ -191,6 +198,12 @@ ion-icon {
         width: 33.3333%;
         margin: 0;
         display: block; }
+        @media (max-width: 1200px) {
+          .projects__container__grid__preview {
+            width: 50%; } }
+        @media (max-width: 900px) {
+          .projects__container__grid__preview {
+            width: 100%; } }
         .projects__container__grid__preview img {
           width: 100%;
           height: 100%;
@@ -219,15 +232,15 @@ ion-icon {
         transition: all .3s ease; }
 
 .contact {
-  height: 78vh;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding: 7rem 0; }
   .contact__header {
     color: #1b1b1b;
     margin: 6.6rem 0; }
   .contact__form {
-    width: 26%; }
+    width: 50%; }
   .contact__form-control:not(:first-of-type) {
     margin: 2rem 0; }
   .contact__btn--submit {
