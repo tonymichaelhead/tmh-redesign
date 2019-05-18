@@ -111,7 +111,9 @@ ion-icon {
       font-size: 6.6rem; }
 
 .about {
-  height: 100vh;
+  height: 81vh;
+  max-width: 120rem;
+  margin: 0 auto;
   color: #1b1b1b;
   font-size: 1.6rem; }
   .about > * {
@@ -119,7 +121,7 @@ ion-icon {
   .about__flex {
     display: flex; }
   .about__header {
-    margin-bottom: 6.6rem; }
+    margin-bottom: 11.6rem; }
 
 .highlights {
   list-style: none;
@@ -127,6 +129,14 @@ ion-icon {
   justify-content: space-around; }
   .highlights__item {
     text-align: center; }
+    .highlights__item h4 {
+      font-weight: 100;
+      font-size: 2.7rem;
+      background-color: #1a1a1a;
+      color: #9aefff;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 0 1.4rem; }
 
 .summary {
   flex: 2;
@@ -138,11 +148,14 @@ ion-icon {
   .summary__img {
     border-radius: 50%;
     display: block;
-    margin: 0 auto; }
+    margin: 2.2rem auto; }
 
 .bio {
   height: 50vh;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
+  justify-content: center;
   align-items: center; }
   .bio__text--big {
     flex: 1;
