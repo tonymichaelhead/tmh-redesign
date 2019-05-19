@@ -11,6 +11,9 @@ body, html {
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "PT Sans Caption", sans-serif;
@@ -112,6 +115,7 @@ ion-icon {
 
 .about {
   max-width: 120rem;
+  width: 80%;
   margin: 11.7rem auto;
   color: #1b1b1b;
   font-size: 1.6rem; }
@@ -130,6 +134,9 @@ ion-icon {
   .highlights__item {
     text-align: center;
     margin: 1.5rem; }
+    @media screen and (max-width: 60em) {
+      .highlights__item {
+        width: 44rem; } }
     .highlights__item h4 {
       font-weight: 100;
       font-size: 2.7rem;
@@ -137,7 +144,10 @@ ion-icon {
       color: #3ae6ce;
       text-transform: uppercase;
       display: inline-block;
-      padding: .6rem 1.4rem; }
+      padding: 2px 1.4rem; }
+      @media screen and (max-width: 60em) {
+        .highlights__item h4 {
+          width: 100%; } }
 
 .summary {
   flex: 2;
@@ -150,6 +160,9 @@ ion-icon {
     border-radius: 50%;
     display: block;
     margin: 2.2rem auto; }
+    @media screen and (max-width: 60em) {
+      .summary__img {
+        margin: 7.2rem auto; } }
 
 .bio {
   width: 80%;
@@ -158,11 +171,23 @@ ion-icon {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 60em) {
+    .bio {
+      flex-direction: column; } }
   .bio__text--big {
-    width: 44rem;
-    font-size: 6.1rem; }
+    font-size: 6.1rem;
+    width: 50%; }
+    @media screen and (max-width: 60em) {
+      .bio__text--big {
+        width: 100%; } }
+    @media screen and (max-width: 600px) {
+      .bio__text--big {
+        font-size: 5.1rem; } }
   .bio__text--small {
-    width: 44rem; }
+    width: 50%; }
+    @media screen and (max-width: 60em) {
+      .bio__text--small {
+        width: 100%; } }
 
 .skills {
   display: flex;
@@ -174,7 +199,7 @@ ion-icon {
 .projects {
   clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%); }
   .projects__container {
-    min-height: 155vh;
+    min-height: 108rem;
     background-color: #1b1b1b;
     color: #f2f0ff;
     font-size: 1.6rem;
@@ -240,7 +265,7 @@ ion-icon {
     color: #1b1b1b;
     margin: 6.6rem 0; }
   .contact__form {
-    width: 50%; }
+    width: 48rem; }
   .contact__form-control:not(:first-of-type) {
     margin: 2rem 0; }
   .contact__btn--submit {
