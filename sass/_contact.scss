@@ -10,7 +10,7 @@
     }
 
     &__form {
-        width: 48rem;
+        max-width: 48rem;
     }
 
     &__form-control:not(:first-of-type) {

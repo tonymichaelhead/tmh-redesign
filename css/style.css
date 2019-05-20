@@ -96,9 +96,18 @@ ion-icon {
     font-size: 6.4rem;
     text-transform: uppercase;
     font-weight: 300;
-    width: 73rem; }
+    white-space: nowrap; }
+    @media (max-width: 700px) {
+      .hero__header {
+        font-size: 4.5rem; } }
+    @media (max-width: 470px) {
+      .hero__header {
+        white-space: normal; } }
   .hero__subheader {
     font-size: 4rem; }
+    @media (max-width: 700px) {
+      .hero__subheader {
+        font-size: 2.5rem; } }
   .hero__btn {
     margin-top: 3rem;
     color: white;
@@ -265,7 +274,7 @@ ion-icon {
     color: #1b1b1b;
     margin: 6.6rem 0; }
   .contact__form {
-    width: 48rem; }
+    max-width: 48rem; }
   .contact__form-control:not(:first-of-type) {
     margin: 2rem 0; }
   .contact__btn--submit {
