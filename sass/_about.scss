@@ -24,6 +24,10 @@
     justify-content: space-around;
     flex-wrap: wrap;
 
+    @media (max-width: 500px) {
+        margin: 6.6rem 0;
+    };
+
     &__item {
         text-align: center;
         margin: 1.5rem;
@@ -34,6 +38,10 @@
 
         @media screen and (max-width: $bp-large) { 
             width: 44rem;
+        };
+
+        @media (max-width: 500px) { 
+            width: 100%;
         };
 
         h4 {
