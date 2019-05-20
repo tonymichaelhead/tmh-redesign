@@ -283,7 +283,8 @@ ion-icon {
     color: #1b1b1b;
     margin: 6.6rem 0; }
   .contact__form {
-    max-width: 48rem; }
+    max-width: 54rem;
+    width: 100%; }
   .contact__form-control:not(:first-of-type) {
     margin: 2rem 0; }
   .contact__btn--submit {
