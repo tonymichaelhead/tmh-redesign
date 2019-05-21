@@ -110,7 +110,7 @@ ion-icon {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #1b1b1b;
     top: -100%;
     left: 0;
     right: 0;
@@ -119,6 +119,19 @@ ion-icon {
     transition: all 0.3s ease-in-out;
     transform: scale(0);
     z-index: 1; }
+    .nav .popup__wrapper {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .nav .popup__nav {
+      font-size: 4.4rem;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column; }
+      .nav .popup__nav__link:link, .nav .popup__nav__link:visited {
+        color: white;
+        text-decoration: none; }
   #toggle:checked + .nav__hamburger--icon + .popup {
     top: 0;
     transform: scale(1); }
