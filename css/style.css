@@ -77,6 +77,51 @@ ion-icon {
     text-transform: lowercase; }
   .nav__link:hover {
     color: #f0355e; }
+  .nav #toggle {
+    display: none; }
+  #toggle:checked + .nav__hamburger--icon .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px; }
+  #toggle:checked + .nav__hamburger--icon .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg); }
+  #toggle:checked + .nav__hamburger--icon .meat {
+    margin-top: -4px;
+    transform: rotate(45deg); }
+  .nav__hamburger--icon {
+    display: none;
+    position: absolute;
+    top: 7em;
+    right: 5%;
+    margin-left: -2em;
+    margin-top: -45px;
+    z-index: 5; }
+    @media screen and (max-width: 600px) {
+      .nav__hamburger--icon {
+        display: block; } }
+    .nav__hamburger--icon div {
+      position: relative;
+      width: 4em;
+      height: 4px;
+      background-color: white;
+      margin-top: 8px;
+      transition: all 0.2s ease-in-out; }
+  .nav .popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+    z-index: 1; }
+  #toggle:checked + .nav__hamburger--icon + .popup {
+    top: 0;
+    transform: scale(1); }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/nikita-vantorin-417627-unsplash.jpg);
