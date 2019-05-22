@@ -1,6 +1,6 @@
 
 var Shuffle = require('shufflejs');
-var element = document.querySelector('.projects__grid');
+var element = document.querySelector('.projects__container__grid');
 var sizer = element.querySelector('.my-sizer-element');
 
 var shuffleInstance = new Shuffle(element, {
@@ -23,7 +23,7 @@ document.getElementById('nav--4')
 
 // METHODS
 function filterProjects(filter, e) {
-    var navLinks = document.getElementsByClassName('projects__nav__item');
+    var navLinks = document.getElementsByClassName('projects__container__nav__item');
     
     for(var i = 0; i < navLinks.length; i++) {
         navLinks[i].className = navLinks[i].className.replace(' active', '');

@@ -8,7 +8,7 @@
         background-color: $color-grey-dark-1;
         color: $color-grey-light-3;
         font-size: 1.6rem;
-        padding: 6.6rem 0;
+        padding: 8.6rem 0;
         
         @media (max-width: 1200px) { 
             height: 135rem;
@@ -28,6 +28,10 @@
             // grid-template-columns: repeat(3, 1fr);
             width: 75%;
             margin: 0 auto;
+
+            @media screen and (max-width: 400px) {
+                width: 100%;
+            }
     
             &__preview {
                 background-color: $color-grey-light-1;
@@ -38,11 +42,11 @@
                 margin: 0;
                 display: block;
 
-                @media (max-width: 1200px) { 
+                @media screen and (max-width: 1200px) { 
                     width: 50%;
                 };
 
-                @media (max-width: 900px) { 
+                @media screen and (max-width: 900px) { 
                     width: 100%;
                 };
     
@@ -63,6 +67,14 @@
     
             .my-sizer-element {
                 width: 33.3333%;
+
+                @media screen and (max-width: 1200px) { 
+                    width: 50%;
+                };
+
+                @media screen and (max-width: 900px) { 
+                    width: 100%;
+                };
             }
         }
     
@@ -72,14 +84,28 @@
             font-size: 2.8rem;
             
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: flex-end;
+
             height: 2.8rem;
-            margin-bottom: 2rem;
-    
+            margin: 5rem auto 5rem auto;
+            max-width: 67rem;
+
+            @media screen and (max-width: 700px) { 
+                // padding: 0 8.6rem;
+                width: 85%;
+            };
+
+            @media screen and (max-width: 400px) {
+                width: 100%;
+            }
+            
             &__item {
-                margin: 0 2.1rem;
                 cursor: pointer;
+
+                @media screen and (max-width: 700px) { 
+                    font-size: 1.4rem;
+                };
             }
     
             .active {

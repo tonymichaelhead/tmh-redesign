@@ -1,7 +1,7 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 
 var Shuffle = require('shufflejs');
-var element = document.querySelector('.projects__grid');
+var element = document.querySelector('.projects__container__grid');
 var sizer = element.querySelector('.my-sizer-element');
 
 var shuffleInstance = new Shuffle(element, {
@@ -24,7 +24,7 @@ document.getElementById('nav--4')
 
 // METHODS
 function filterProjects(filter, e) {
-    var navLinks = document.getElementsByClassName('projects__nav__item');
+    var navLinks = document.getElementsByClassName('projects__container__nav__item');
     
     for(var i = 0; i < navLinks.length; i++) {
         navLinks[i].className = navLinks[i].className.replace(' active', '');
