@@ -279,7 +279,7 @@ ion-icon {
     background-color: #1b1b1b;
     color: #f2f0ff;
     font-size: 1.6rem;
-    padding: 6.6rem 0; }
+    padding: 8.6rem 0; }
     @media (max-width: 1200px) {
       .projects__container {
         height: 135rem; } }
@@ -291,6 +291,9 @@ ion-icon {
     .projects__container__grid {
       width: 75%;
       margin: 0 auto; }
+      @media screen and (max-width: 400px) {
+        .projects__container__grid {
+          width: 100%; } }
       .projects__container__grid__preview {
         background-color: #797575;
         position: relative;
@@ -299,10 +302,10 @@ ion-icon {
         width: 33.3333%;
         margin: 0;
         display: block; }
-        @media (max-width: 1200px) {
+        @media screen and (max-width: 1200px) {
           .projects__container__grid__preview {
             width: 50%; } }
-        @media (max-width: 900px) {
+        @media screen and (max-width: 900px) {
           .projects__container__grid__preview {
             width: 100%; } }
         .projects__container__grid__preview img {
@@ -314,18 +317,33 @@ ion-icon {
             filter: blur(10px) brightness(20%); }
       .projects__container__grid .my-sizer-element {
         width: 33.3333%; }
+        @media screen and (max-width: 1200px) {
+          .projects__container__grid .my-sizer-element {
+            width: 50%; } }
+        @media screen and (max-width: 900px) {
+          .projects__container__grid .my-sizer-element {
+            width: 100%; } }
     .projects__container__nav {
       list-style: none;
       text-transform: lowercase;
       font-size: 2.8rem;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: flex-end;
       height: 2.8rem;
-      margin-bottom: 2rem; }
+      margin: 5rem auto 5rem auto;
+      max-width: 67rem; }
+      @media screen and (max-width: 700px) {
+        .projects__container__nav {
+          width: 85%; } }
+      @media screen and (max-width: 400px) {
+        .projects__container__nav {
+          width: 100%; } }
       .projects__container__nav__item {
-        margin: 0 2.1rem;
         cursor: pointer; }
+        @media screen and (max-width: 700px) {
+          .projects__container__nav__item {
+            font-size: 1.4rem; } }
       .projects__container__nav .active {
         font-weight: bold;
         font-size: 3.3rem;
@@ -342,7 +360,8 @@ ion-icon {
     margin: 6.6rem 0; }
   .contact__form {
     max-width: 54rem;
-    width: 100%; }
+    width: 100%;
+    padding: 0 1.5rem; }
   .contact__form-control:not(:first-of-type) {
     margin: 2rem 0; }
   .contact__btn--submit {
