@@ -1,6 +1,10 @@
 .projects {
     clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
 
+    @media screen and (max-width: 500px) { 
+        clip-path: polygon(0 3%, 100% 0, 100% 92%, 0 100vh);
+    };
+
 
     &__container {
 

@@ -7,10 +7,12 @@
     background-size: cover;
 
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100vh);
+
+    @media screen and (max-width: 500px) { 
+        clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100vh);
+    };
 }
-// TODO: Fixing width on header will get rid of white space on mobile! 
-// also contact form width
-// also project nav links
+
 .hero {
     height: 100vh;
     position: relative;
@@ -29,18 +31,18 @@
         font-weight: 300;
         white-space: nowrap;
 
-        @media (max-width: 700px) { 
+        @media screen and (max-width: 700px) { 
             font-size: 4.5rem;
         };
 
-        @media (max-width: 470px) { 
+        @media screen and (max-width: 470px) { 
             white-space: normal;
         };
     }
 
     &__subheader {
         font-size: 4rem;
-        @media (max-width: 700px) { 
+        @media screen and (max-width: 700px) { 
             font-size: 2.5rem;
         };
     }
