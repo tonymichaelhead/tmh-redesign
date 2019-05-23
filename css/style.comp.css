@@ -145,7 +145,7 @@ ion-icon {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100vh); }
   @media screen and (max-width: 500px) {
     .header {
-      clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100vh); } }
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100vh); } }
 
 .hero {
   height: 100vh;
@@ -279,7 +279,7 @@ ion-icon {
   clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%); }
   @media screen and (max-width: 500px) {
     .projects {
-      clip-path: polygon(0 3%, 100% 0, 100% 92%, 0 100vh); } }
+      clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100vh); } }
   .projects__container {
     min-height: 108rem;
     background-color: #1b1b1b;
