@@ -13,7 +13,7 @@
         <title>tonymichaelhead.com</title>
     </head>
     <body>
-        <section class="header">
+        <section class="header" id="top">
             <div class="hero">
                 <nav class="nav">
                     <div class="nav__left">
@@ -22,13 +22,13 @@
                     </div>
                     <ul class="nav__right">
                         <li class="nav__item">
-                            <a href="#" class="nav__link">About</a>
+                            <a href="#about" class="nav__link">About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Work</a>
+                            <a href="#work" class="nav__link">Work</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Contact</a>
+                            <a href="#contact" class="nav__link">Contact</a>
                         </li>
                         <li class="nav__item">
                         </ul>
@@ -43,9 +43,9 @@
                         <div class="popup">
                             <div class="popup__wrapper">
                                 <nav class="popup__nav">
-                                    <a href="#" class="popup__nav__link">About</a>
-                                    <a href="#" class="popup__nav__link">Work</a>
-                                    <a href="#" class="popup__nav__link">Contact</a>
+                                    <a href="#about" class="popup__nav__link">About</a>
+                                    <a href="#work" class="popup__nav__link">Work</a>
+                                    <a href="#contact" class="popup__nav__link">Contact</a>
                                 </nav>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                 <div class="hero__body">
                     <h1 class="hero__header">Software Developer</h1>
                     <p class="hero__subheader">and an all around renassiance man</p>
-                    <button class="btn hero__btn">Let's go &darr;</button>
+                    <a href="#about" class="btn hero__btn">Let's go &darr;</a>
                 </div>
             </div>
 
@@ -64,7 +64,7 @@
             </div> -->
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <h3 class="about__header">About</h3>
             <ul class="highlights">
                 <li class="highlights__item">
@@ -107,7 +107,7 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="work">
             <div class="projects__container">
                 <h3 class="projects__container__header">Projects</h3>
                 <ul class="projects__container__nav">
@@ -140,7 +140,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <h3 class="contact__header">Contact</h3>
             <form action="#" class="contact__form">
                 <div class="contact__form-control">
@@ -157,9 +157,9 @@
         </section>
 
         <section class="footer">
-            <div class="footer__back-to-top">
+            <a href="#top" class="footer__back-to-top">
                 &#8607;
-            </div>
+            </a>
             <div class="footer__flex">
                 <ul class="footer__social-media">
                     <li class="social-icon social-icon--linked">
@@ -175,6 +175,7 @@
 
         <!-- Web fonts -->
         <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/bundle.js"></script>
     </body>
 </html>

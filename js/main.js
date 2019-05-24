@@ -1,4 +1,4 @@
-
+// PROJECT NAV
 var Shuffle = require('shufflejs');
 var element = document.querySelector('.projects__container__grid');
 var sizer = element.querySelector('.my-sizer-element');
@@ -8,7 +8,6 @@ var shuffleInstance = new Shuffle(element, {
   sizer: sizer // could also be a selector: '.my-sizer-element'
 });
 
-// Project nav
 document.getElementById('nav--1')
     .addEventListener('click', filterProjects.bind(shuffleInstance, 'all'));
 
@@ -20,6 +19,7 @@ document.getElementById('nav--3')
 
 document.getElementById('nav--4')
     .addEventListener('click', filterProjects.bind(shuffleInstance, ''));
+
 
 // METHODS
 function filterProjects(filter, e) {
@@ -37,3 +37,22 @@ function filterProjects(filter, e) {
     
     shuffleInstance.filter(filter);
 }
+
+
+// SMOOTH SCROLL
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+                window.location.hash = hash;
+            });
+        }
+    });
+});

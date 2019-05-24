@@ -137,7 +137,7 @@ ion-icon {
     transform: scale(1); }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-small.jpg);
   height: 117vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -146,6 +146,9 @@ ion-icon {
   @media screen and (max-width: 500px) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100vh); } }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg); } }
 
 .hero {
   height: 100vh;
@@ -177,7 +180,9 @@ ion-icon {
     color: white;
     font-size: 3.2rem;
     font-family: "PT Sans Caption", sans-serif;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block; }
   .hero__cta {
     position: absolute;
     bottom: 4rem;
@@ -410,6 +415,8 @@ input {
     position: absolute;
     left: 50%;
     background-color: #f0355e;
+    color: white;
     padding: 1rem;
     font-size: 3rem;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    text-decoration: none; }

@@ -1,5 +1,5 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-
+// PROJECT NAV
 var Shuffle = require('shufflejs');
 var element = document.querySelector('.projects__container__grid');
 var sizer = element.querySelector('.my-sizer-element');
@@ -9,7 +9,6 @@ var shuffleInstance = new Shuffle(element, {
   sizer: sizer // could also be a selector: '.my-sizer-element'
 });
 
-// Project nav
 document.getElementById('nav--1')
     .addEventListener('click', filterProjects.bind(shuffleInstance, 'all'));
 
@@ -21,6 +20,7 @@ document.getElementById('nav--3')
 
 document.getElementById('nav--4')
     .addEventListener('click', filterProjects.bind(shuffleInstance, ''));
+
 
 // METHODS
 function filterProjects(filter, e) {
@@ -39,6 +39,24 @@ function filterProjects(filter, e) {
     shuffleInstance.filter(filter);
 }
 
+
+// SMOOTH SCROLL
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+                window.location.hash = hash;
+            });
+        }
+    });
+});
 },{"shufflejs":2}],2:[function(require,module,exports){
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :

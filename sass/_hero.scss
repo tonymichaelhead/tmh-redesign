@@ -1,6 +1,6 @@
 .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                      url(../img/hero.jpg);
+                      url(../img/hero-small.jpg);
     height: 117vh;
     background-position: center; 
     background-repeat: no-repeat;
@@ -11,6 +11,14 @@
     @media screen and (max-width: 500px) { 
         clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100vh);
     };
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),    
+    only screen and (min-width: 125em) { 
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(../img/hero.jpg);           
+    }
 }
 
 .hero {
@@ -53,6 +61,8 @@
         font-size: 3.2rem;
         font-family: $font-primary;
         text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
     }
 
     &__cta {
