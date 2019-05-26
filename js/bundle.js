@@ -39,6 +39,17 @@ function filterProjects(filter, e) {
     shuffleInstance.filter(filter);
 }
 
+// HAMBURGER MENU CLOSE ON LINK CLICK
+var menu = document.getElementById('menu');
+var toggle = document.getElementById('toggle');
+
+menu.addEventListener('click', handleMenuClick);
+
+function handleMenuClick(event) {
+    if (event.target instanceof HTMLAnchorElement) {
+        toggle.checked = false;
+    }
+}
 
 // SMOOTH SCROLL
 $(document).ready(function(){
