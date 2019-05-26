@@ -1,5 +1,10 @@
 .nav {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+
     display: flex;
+    justify-content: space-between;
     
     &__left {
         display: flex;
@@ -49,26 +54,31 @@
         color: $color-secondary;
     }
 
+    
     // HAMBURGER MENU
     #toggle {
         display: none;
     }
 
+    #toggle:checked + &__hamburger--icon {
+        position: fixed;
+    }
+    
     #toggle:checked + &__hamburger--icon .top-bun {
         transform: rotate(-45deg);
         margin-top: 25px;
     }
-
+    
     #toggle:checked + &__hamburger--icon .bottom-bun {
         opacity: 0;
         transform: rotate(45deg);
     }
-
+    
     #toggle:checked + &__hamburger--icon .meat {
         margin-top: -4px;
         transform: rotate(45deg);
     }
-
+    
     &__hamburger--icon {
         display: none;
         position: absolute;
@@ -77,11 +87,11 @@
         margin-left: -2em;
         margin-top: -45px;
         z-index: 5;
-
+    
         @media screen and (max-width: 600px) { 
             display: block;
         };
-
+    
         div {
             position: relative;
             width: 4em;
@@ -92,12 +102,12 @@
             transition: all 0.2s ease-in-out;
         }
     }
-
+    
     // HAMBURGER POPUP
     .popup {
-        position: fixed;
         width: 100%;
         height: 100%;
+        position: fixed;
         background-color: $color-grey-dark-1;
         top: -100%; left: 0; right: 0; bottom: 0;
         overflow: hidden;
@@ -111,26 +121,40 @@
             justify-content: center;
             align-items: center;
         }
-
+    
         &__nav {
+            width: 100%;
             font-size: 4.4rem;
             text-transform: uppercase;
+            list-style: none;
+            text-align: center;
+    
             display: flex;
             flex-direction: column;
             
+            &__item {
+                display: inline-block;
+            }
+    
             &__link:link,
             &__link:visited {
                 color: $color-primary;
                 text-decoration: none;
+                width: 100%;
+                padding: 2.4rem 0;
+                display: inline-block;
+            }
+    
+            &__link:hover {
+                color: $color-secondary;
             }
         }
     }
-
-
-
+    
+    
+    
     #toggle:checked + &__hamburger--icon + .popup {
         top: 0;
         transform: scale(1);
     }
-
 }
