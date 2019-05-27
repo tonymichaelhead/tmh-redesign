@@ -144,17 +144,27 @@
 
         <section class="contact" id="contact">
             <h3 class="contact__header">Contact</h3>
-            <form action="#" class="contact__form">
-                <div class="contact__form-control">
-                    <input type="text" name="name" placeholder="Name">
+            <form 
+                action="https://usebasin.com/f/10afc4446f09" 
+                method="POST" 
+                class="contact__form" 
+                id="contact-form"
+            >
+                <div class="" id="form-message">
+                    <img src="img/loader-icon.svg" alt="Loading" id="loader-icon" class="form-message__loader">
                 </div>
                 <div class="contact__form-control">
-                    <input type="text" name="email" placeholder="Enter your email address">
+                    <input type="text" name="name" placeholder="Name" required>
                 </div>
                 <div class="contact__form-control">
-                    <textarea name="message" cols="30" rows="7" placeholder="Enter your message"></textarea>
+                    <input type="email" name="email" placeholder="Enter your email address" required>
                 </div>
-                <button type="submit" class="btn contact__btn--submit">Submit</button>
+                <div class="contact__form-control">
+                    <textarea name="message" cols="30" rows="7" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" id="submit-button" class="btn contact__btn--submit">
+                    <span>Submit</span>
+                </button>
             </form>
         </section>
 

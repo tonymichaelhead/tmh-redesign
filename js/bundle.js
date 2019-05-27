@@ -39,6 +39,7 @@ function filterProjects(filter, e) {
     shuffleInstance.filter(filter);
 }
 
+
 // HAMBURGER MENU CLOSE ON LINK CLICK
 var menu = document.getElementById('menu');
 var toggle = document.getElementById('toggle');
@@ -51,8 +52,9 @@ function handleMenuClick(event) {
     }
 }
 
-// SMOOTH SCROLL
+
 $(document).ready(function(){
+    // SMOOTH SCROLL
     $("a").on('click', function(event) {
         if (this.hash !== "") {
             event.preventDefault();
@@ -67,7 +69,49 @@ $(document).ready(function(){
             });
         }
     });
+
+    
+    // SUBMIT CONTACT FORM
+    var form = document.getElementById("contact-form");
+    var formMessage = document.getElementById("form-message");
+    var loader = document.getElementById("loader-icon");
+    var submitButton = document.getElementById("submit-button");
+    
+    form.onsubmit = function(event) {
+        event.preventDefault();
+
+        submitButton.disabled = true;
+        loader.style.display = "inline-block";
+        
+        var formData = new FormData(form);
+        var xhr = new XMLHttpRequest();
+        
+        xhr.open("POST", form.action, true);
+        
+        xhr.onload = function(e) {
+            console.log(xhr);
+            var response = JSON.parse(xhr.response);
+            if (xhr.status === 200) {
+                formMessage.innerHTML = "Email successfully delivered! Thanks for reaching out :)";
+                formMessage.className += 'success';
+                form.reset();
+            } else {
+                formMessage.innerHTML = "An error occured sending your email: " + response.error;
+                formMessage.className += 'error';
+            }
+            submitButton.disabled = false;
+            loader.style.display = "none";
+        };
+
+        xhr.send(formData);
+    };
+
 });
+
+
+
+
+
 },{"shufflejs":2}],2:[function(require,module,exports){
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
