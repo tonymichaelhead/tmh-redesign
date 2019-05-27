@@ -45,6 +45,16 @@ ion-icon {
   .social-icon--git {
     background-color: #080808; }
 
+#form-message {
+  font-size: 1.8rem;
+  text-align: center; }
+
+.success {
+  color: green; }
+
+.error {
+  color: red; }
+
 .nav {
   width: 100%;
   position: absolute;
@@ -399,6 +409,10 @@ ion-icon {
     padding-top: 1.3rem;
     font-size: 1.6rem;
     text-transform: uppercase; }
+
+.form-message__loader {
+  display: none;
+  width: 13.6rem; }
 
 input, textarea {
   border: none;
