@@ -28,6 +28,10 @@
         font-size: 1.6rem;
         text-transform: uppercase;
     }
+
+    &__btn--submit:disabled {
+        border-color: grey;
+    }
 }
 
 .form-message {

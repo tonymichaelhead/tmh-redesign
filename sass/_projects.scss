@@ -60,13 +60,42 @@
                     object-fit: cover;
                     transition: all .2s;
                     
-                    &:hover {
+                    // &:hover {
+                     
+                    //     // transform: translateX(-4rem) scale(1.2); 
+                    //     // transform: scale(1.2); 
+                    // }
+                }
+
+                .picture-item__overlay {
+                    // display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%; 
+                    
+                    &--background {
+                        width: 100%;
+                        height: 100%;
                         filter: blur(10px) brightness(20%);
-                        // transform: translateX(-4rem) scale(1.2); 
-                        // transform: scale(1.2); 
+                        background-color: red;
+                    }
+    
+                    &--content {
+    
+    
+                        button {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
                     }
                 }
-    
+
+                .picture-item__overlay:hover {
+                    // display: block;
+                }    
             }
     
             .my-sizer-element {
