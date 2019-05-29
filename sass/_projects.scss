@@ -68,7 +68,7 @@
                 }
 
                 .picture-item__overlay {
-                    // display: none;
+                    display: none;
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -76,26 +76,33 @@
                     width: 100%; 
                     
                     &--background {
+                        z-index: 0;
+                        position: absolute;
                         width: 100%;
                         height: 100%;
-                        filter: blur(10px) brightness(20%);
-                        background-color: red;
+
+                        // background-color: red;
                     }
     
                     &--content {
-    
-    
-                        button {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                        }
+                        position: relative;
+                        z-index: 1;
+
+                        display: flex;
+                        flex-direction: column;
                     }
                 }
+                
+                &:hover .picture-item__overlay {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center; 
+                    // background-color: green;
+                }
 
-                .picture-item__overlay:hover {
-                    // display: block;
-                }    
+                &:hover img {
+                    filter: blur(10px) brightness(20%);
+                }
             }
     
             .my-sizer-element {

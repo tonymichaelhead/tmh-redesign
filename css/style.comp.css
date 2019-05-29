@@ -350,8 +350,29 @@ ion-icon {
           height: 100%;
           object-fit: cover;
           transition: all .2s; }
-          .projects__container__grid__preview img:hover {
-            filter: blur(10px) brightness(20%); }
+        .projects__container__grid__preview .picture-item__overlay {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%; }
+          .projects__container__grid__preview .picture-item__overlay--background {
+            z-index: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%; }
+          .projects__container__grid__preview .picture-item__overlay--content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column; }
+        .projects__container__grid__preview:hover .picture-item__overlay {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+        .projects__container__grid__preview:hover img {
+          filter: blur(10px) brightness(20%); }
       .projects__container__grid .my-sizer-element {
         width: 33.3333%; }
         @media screen and (max-width: 1200px) {
@@ -409,6 +430,8 @@ ion-icon {
     padding-top: 1.3rem;
     font-size: 1.6rem;
     text-transform: uppercase; }
+  .contact__btn--submit:disabled {
+    border-color: grey; }
 
 .form-message__loader {
   display: none;
