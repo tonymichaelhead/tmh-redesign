@@ -1,9 +1,11 @@
 .about {
     max-width: 120rem;
     width: 80%;
-    margin: 11.7rem auto;
+    margin: 0 auto;
     color: $color-grey-dark-1;
     font-size: 1.6rem;
+    padding: 11.6rem 0;
+    padding-bottom: 5rem;
     
     & > * {
         margin: 6.6rem;
@@ -14,7 +16,8 @@
     }
 
     &__header {
-        margin-bottom: 11.6rem;
+        // margin-bottom: 11.6rem;
+        margin-top: 0;
     }
 }
 
