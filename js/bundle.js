@@ -53,7 +53,101 @@ function handleMenuClick(event) {
 }
 
 
+// PROJECT MODAL CAROUSEL
+var slideIndex = [1, 1, 1, 1, 1, 1];
+var slideId = ['slides1', 'slides2', 'slides3', 'slides4', 'slides5', 'slides6']
+
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+showSlides(1, 4);
+showSlides(1, 5);
+
+// Next/prev controls
+function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+}
+
+// Thumbnail image controls
+function currentSlide(n, no) {
+    showSlides(slideIndex[no] = n, no);
+}
+
+function showSlides(n, no) {
+    var i;
+    var x = document.getElementsByClassName(slideId[no]);
+    
+    // Returns the three indicator dots associated with given carousel
+    var indicators = $(x).closest('.project-modal__carousel').find('.indicator');
+    
+
+    if (n > x.length) { slideIndex[no] = 1; }
+    if (n < 1) { slideIndex[no] = x.length; }
+
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = 'none';
+    }
+
+    for (i = 0; i < indicators.length; i++) {
+        indicators[i].className = indicators[i].className.replace(' active-slide', '');
+    }
+
+    x[slideIndex[no]-1].style.display = 'block';
+    indicators[slideIndex[no]-1].className += ' active-slide';
+}
+
+
+
 $(document).ready(function(){
+
+    // PROJECT MODALS
+    var closeBtn = $('.close');
+
+    // Loop through all buttons and match modals by data attribute
+    $('.modal-button').each(function(btn) {
+        $(this).on('click', function() {
+            var number = $(this).data('modalNumber');
+            var modal = $(document).find(".project-modal[data-modal-number='" + number + "']");
+
+            modal.show();
+        });
+    });
+
+    closeBtn.on('click', function() {
+        // hide all modals
+        $('.project-modal').hide();
+    });
+    
+    $(window).on('click', function(event) {
+        // hide all modals
+        if (event.target.classList.contains('project-modal')) {
+            $('.project-modal').hide();
+        }
+    });
+
+
+    // CAROUSEL NAV
+    $('.prev').on('click', function() {
+        var no = $(this).closest('.project-modal__carousel').data('slideNumber');
+        
+        plusSlides(-1, no);
+    });
+
+    $('.next').on('click', function() {
+        var no = $(this).closest('.project-modal__carousel').data('slideNumber');
+
+        plusSlides(1, no);
+    });
+    
+    $('.indicator').on('click', function() {
+        var no = $(this).closest('.project-modal__carousel').data('slideNumber');
+
+        currentSlide($(this).data('number'), no);
+    });
+
+
+
     // SMOOTH SCROLL
     $("a").on('click', function(event) {
         if (this.hash !== "") {
