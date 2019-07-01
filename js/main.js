@@ -118,7 +118,7 @@ $(document).ready(function(){
         $('.project-modal').hide();
     });
     
-    $(document).on('click', function(event) {
+    $(document).on('click touchstart', function(event) {
         // hide all modals
         if (event.target.classList.contains('project-modal')) {
             $('.project-modal').hide();
