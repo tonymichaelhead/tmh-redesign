@@ -25,7 +25,7 @@
                     <a href="#about" class="nav__link">About</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#work" class="nav__link">Work</a>
+                    <a href="#projects" class="nav__link">Projects</a>
                 </li>
                 <li class="nav__item">
                     <a href="#contact" class="nav__link">Contact</a>
@@ -98,18 +98,19 @@
                 <div class="bio__text--small">
                     <img src="img/tony_avatar.jpg" alt="Tony Michael Head avatar" class="summary__img">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        In interdum lacus vel dolor porttitor rutrum. Pellentesque 
-                        commodo metus dui, eget tempus enim ultrices ac. Morbi aliquam 
-                        eget neque et maximus. Sed fermentum enim vitae scelerisque efficitur. 
-                        Maecenas iaculis ligula ante, eget finibus dui aliquam feugiat. 
-                        Duis pretium tristique enim, consequat dictum leo gravida sed.
+                        I have 4 years experience as a software engineer, going on 2 years of industry experience. 
+                        I have co-founded a startup, worked in collaborative environments, and built software products from the ground up. 
+                        Being a full-stack engineer, I particularly enjoy using React.js, PHP Laravel and SQL databases.
+
+                        While I take pleasure in learning new technologies for fun, I feel the greatest sense of satisfaction in 
+                        applying what I've learned to solving real problems for clients. Be it a professional, personal, or an open-source 
+                        opportunity, I'm always looking for exciting new projects to immerse myself in.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="projects" id="work">
+        <section class="projects" id="projects">
             <div class="projects__container">
                 <h3 class="projects__container__header">Projects</h3>
                 <ul class="projects__container__nav">
@@ -119,19 +120,19 @@
                     <li class="projects__container__nav__item" id="nav--4">Games</li>
                 </ul>
                 <div class="projects__container__grid">
-                    <figure class="projects__container__grid__preview picture-item" data-groups='["react"]'>
-                        <img src="img/forest-ai_thumbnail.jpg" alt="Forsest AI project thumbnail">
+                    <figure class="projects__container__grid__preview picture-item" data-groups='["games"]'>
+                        <!-- <img src="img/forest-ai_thumbnail.jpg" alt="Forsest AI project thumbnail"> -->
                         <div class="picture-item__overlay">
                             <div class="picture-item__overlay--background"></div>
                             <div class="picture-item__overlay--content">
-                                <h4>Forest AI</h4>
-                                <p>Javascript & CSS</p>
+                                <h4>Castlewalker</h4>
+                                <p>Python, Pygame</p>
                                 <button class="btn btn--projects modal-button" data-modal-number="1">Learn more</button>
                             </div>
                         </div>
                     </figure>
-                    <figure class="projects__container__grid__preview picture-item" data-groups='["react"]'>
-                        <img src="img/legatum.png" alt="Forsest AI project thumbnail">
+                    <figure class="projects__container__grid__preview picture-item" data-groups='["javascript"]'>
+                        <img src="img/legatum.png" alt="Legatum project thumbnail">
                         <div class="picture-item__overlay">
                             <div class="picture-item__overlay--background"></div>
                             <div class="picture-item__overlay--content">
@@ -141,8 +142,8 @@
                             </div>
                         </div>                    
                     </figure>
-                    <figure class="projects__container__grid__preview picture-item" data-groups='["poop"]'>
-                        <img src="img/tortamigo.png" alt="Forest AI project thumbnail">
+                    <figure class="projects__container__grid__preview picture-item" data-groups='["react","javascript"]'>
+                        <img src="img/tortamigo.png" alt="TortAmigo project thumbnail">
                         <div class="picture-item__overlay">
                             <div class="picture-item__overlay--background"></div>
                             <div class="picture-item__overlay--content">
@@ -152,8 +153,8 @@
                             </div>
                         </div>
                     </figure>
-                    <figure class="projects__container__grid__preview picture-item" data-groups='["react"]'>
-                        <img src="img/boomboomcats.png" alt="Forsest AI project thumbnail">
+                    <figure class="projects__container__grid__preview picture-item" data-groups='["react","javascript"]'>
+                        <img src="img/boomboomcats.png" alt="BoomBoom Cats project thumbnail">
                         <div class="picture-item__overlay">
                             <div class="picture-item__overlay--background"></div>
                             <div class="picture-item__overlay--content">
@@ -163,8 +164,8 @@
                             </div>
                         </div>
                     </figure>
-                    <figure class="projects__container__grid__preview picture-item" data-groups='["react"]'>
-                        <img src="img/forest-ai_thumbnail.jpg" alt="Forsest AI project thumbnail">
+                    <figure class="projects__container__grid__preview picture-item" data-groups='["games","javascript"]'>
+                        <img src="img/forest-ai_thumbnail.jpg" alt="Forest AI project thumbnail">
                         <div class="picture-item__overlay">
                             <div class="picture-item__overlay--background"></div>
                             <div class="picture-item__overlay--content">
@@ -174,8 +175,8 @@
                             </div>
                         </div>
                     </figure>
-                    <figure class="projects__container__grid__preview picture-item" data-groups='["poop"]'>
-                        <img src="img/landmrk_cover.png" alt="Forsest AI project thumbnail">
+                    <figure class="projects__container__grid__preview picture-item" data-groups='["javascript"]'>
+                        <img src="img/landmrk_cover.png" alt="LandMrk project thumbnail">
                         <div class="picture-item__overlay">
                             <div class="picture-item__overlay--background"></div>
                             <div class="picture-item__overlay--content">
@@ -197,17 +198,14 @@
                 <!-- CAROUSEL 1 -->
                 <div class="project-modal__carousel" data-slide-number="0">
                     <div class="slides1 fade">
-                        <div class="numbertext">1 / 3</div>
                         <img src="img/forest-ai_thumbnail.jpg" alt="Forest AI screenshot">
                     </div>
                     
                     <div class="slides1 fade">
-                        <div class="numbertext">2 / 3</div>
                         <img src="img/forest-ai_thumbnail.jpg" alt="Forest AI screenshot">
                     </div>
 
                     <div class="slides1 fade">
-                        <div class="numbertext">3 / 3</div>
                         <img src="img/forest-ai_thumbnail.jpg" alt="Forest AI screenshot">
                     </div>
 
@@ -216,21 +214,21 @@
                     <a class="next">&#10095</a>
 
                     <!-- Indicators -->
-                    <div style="text-align:center">
+                    <div class="indicator-group">
                         <span class="indicator" data-number="1"></span>
                         <span class="indicator" data-number="2"></span>
                         <span class="indicator" data-number="3"></span>
                     </div>
                 </div>
                 <div class="project-modal__body">
-                    <h2>Forest AI</h2>
-                    <h3>Doing tons of cool stuff</h3>
+                    <h2>Castlewalker</h2>
+                    <h3>A retro zelda-like RPG that has you hunting monsters in a fantasy world</h3>
                     <p>
-                        Co-founded and helped develop Legatum — a dApp for protecting legal contracts 
-                        such as your Last Will and Testament by uploading them to the Ethereum blockchain. 
-                        I was responsible for implementing front end logic and user experience.
-                        Tech stack: Angular, Solidity, Truffle.js, Web3, MariaDB
+                        Prototyped in Python/PyGame, this game is now in the process of being converted to Godot. 
+                        Castlewalker is being built as an open-source game and welcomes support of anyone who wants 
+                        to contribute!
                     </p>
+                    <!-- <a href="#" class="btn btn--project-view">View </a> -->
                     <span class="close">&times;</span>
                 </div>
             </div>
@@ -241,17 +239,14 @@
                 <!-- CAROUSEL 2 -->
                 <div class="project-modal__carousel" data-slide-number="1">
                     <div class="slides2 fade">
-                        <div class="numbertext">1 / 3</div>
                         <img src="img/legatum.png" alt="Legatum app screenshot">
                     </div>
                     
                     <div class="slides2 fade">
-                        <div class="numbertext">2 / 3</div>
                         <img src="img/landmrk_cover.png" alt="Legatum app screenshot">
                     </div>
 
                     <div class="slides2 fade">
-                        <div class="numbertext">3 / 3</div>
                         <img src="img/tortamigo.png" alt="Legatum app screenshot">
                     </div>
 
@@ -260,14 +255,21 @@
                     <a class="next" data-slide-number="1">&#10095</a>
 
                     <!-- Indicators -->
-                    <div style="text-align:center">
+                    <div class="indicator-group">
                         <span class="indicator" data-number="1"></span>
                         <span class="indicator" data-number="2"></span>
                         <span class="indicator" data-number="3"></span>
                     </div>
                 </div>
                 <div class="project-modal__body">
-                    <p>Hello, modally world 2</p>
+                    <h2>Legatum</h2>
+                    <h3>Protect your legacy</h3>
+                    <p>
+                        Co-founded and helped develop Legatum — a dApp for protecting legal contracts 
+                        such as your Last Will and Testament by uploading them to the Ethereum blockchain. 
+                        I was responsible for implementing front end logic and user experience.
+                    </p>
+                    <!-- <a href="#" class="btn btn--project-view">View</a> -->
                     <span class="close">&times;</span>
                 </div>
             </div>
@@ -278,17 +280,14 @@
                 <!-- CAROUSEL 3 -->
                 <div class="project-modal__carousel" data-slide-number="2">
                     <div class="slides3 fade">
-                        <div class="numbertext">1 / 3</div>
                         <img src="img/legatum.png" alt="Legatum app screenshot">
                     </div>
                     
                     <div class="slides3 fade">
-                        <div class="numbertext">2 / 3</div>
                         <img src="img/landmrk_cover.png" alt="Legatum app screenshot">
                     </div>
 
                     <div class="slides3 fade">
-                        <div class="numbertext">3 / 3</div>
                         <img src="img/tortamigo.png" alt="Legatum app screenshot">
                     </div>
 
@@ -297,14 +296,20 @@
                     <a class="next" data-slide-number="1">&#10095</a>
 
                     <!-- Indicators -->
-                    <div style="text-align:center">
+                    <div class="indicator-group">
                         <span class="indicator" data-number="1"></span>
                         <span class="indicator" data-number="2"></span>
                         <span class="indicator" data-number="3"></span>
                     </div>
                 </div>
                 <div class="project-modal__body">
-                    <p>Hello, modally world 3</p>
+                    <h2>TortAmigo</h2>
+                    <h3>Discover tasty tortas near you</h3>
+                    <p>
+                        TortAmigo is a solo passion project. It's a sleek, responsive web app that 
+                        fetches torta vendors by the user’s geolocation using HTML5 and the Yelp API.
+                    </p>
+                    <a href="#" class="btn btn--project-view">View</a>
                     <span class="close">&times;</span>
                 </div>
             </div>
@@ -315,17 +320,14 @@
                 <!-- CAROUSEL 4 -->
                 <div class="project-modal__carousel" data-slide-number="3">
                     <div class="slides4 fade">
-                        <div class="numbertext">1 / 3</div>
                         <img src="img/legatum.png" alt="Legatum app screenshot">
                     </div>
                     
                     <div class="slides4 fade">
-                        <div class="numbertext">2 / 3</div>
                         <img src="img/landmrk_cover.png" alt="Legatum app screenshot">
                     </div>
 
                     <div class="slides4 fade">
-                        <div class="numbertext">3 / 3</div>
                         <img src="img/tortamigo.png" alt="Legatum app screenshot">
                     </div>
 
@@ -334,14 +336,23 @@
                     <a class="next">&#10095</a>
 
                     <!-- Indicators -->
-                    <div style="text-align:center">
+                    <div class="indicator-group">
                         <span class="indicator" data-number="1"></span>
                         <span class="indicator" data-number="2"></span>
                         <span class="indicator" data-number="3"></span>
                     </div>
                 </div>
                 <div class="project-modal__body">
-                    <p>Hello, modally world 4</p>
+                    <h2>BoomBoom Cats</h2>
+                    <h3>Explosive game where your goal is to be the last cat standing</h3>
+                    <p>
+                        This game is an online multiplayer card game which drew great 
+                        inspiration from the popular card game "Exploding Kittens." I 
+                        contributed to this project by adding a social media system that 
+                        allows users to customize their own personal profile and friend other 
+                        players.
+                    </p>
+                    <a href="#" class="btn btn--project-view">View</a>
                     <span class="close">&times;</span>
                 </div>
             </div>
@@ -352,17 +363,14 @@
                 <!-- CAROUSEL 5 -->
                 <div class="project-modal__carousel" data-slide-number="4">
                     <div class="slides5 fade">
-                        <div class="numbertext">1 / 3</div>
                         <img src="img/legatum.png" alt="Legatum app screenshot">
                     </div>
                     
                     <div class="slides5 fade">
-                        <div class="numbertext">2 / 3</div>
                         <img src="img/landmrk_cover.png" alt="Legatum app screenshot">
                     </div>
 
                     <div class="slides5 fade">
-                        <div class="numbertext">3 / 3</div>
                         <img src="img/tortamigo.png" alt="Legatum app screenshot">
                     </div>
 
@@ -371,14 +379,21 @@
                     <a class="next">&#10095</a>
 
                     <!-- Indicators -->
-                    <div style="text-align:center">
+                    <div class="indicator-group">
                         <span class="indicator" data-number="1"></span>
                         <span class="indicator" data-number="2"></span>
                         <span class="indicator" data-number="3"></span>
                     </div>
                 </div>
                 <div class="project-modal__body">
-                    <p>Hello, modally world 5</p>
+                    <h2>Forest.AI</h2>
+                    <h3>A cyberpunk, indie RPG where choices mean everything</h3>
+                    <p>
+                        I am the the sole creator, developer and storywriter of this episodic game. 
+                        Forest.AI is still under development, but give the demo a play and tell me 
+                        what you think!
+                    </p>
+                    <a href="#" class="btn btn--project-view">View</a>
                     <span class="close">&times;</span>
                 </div>
             </div>
@@ -389,17 +404,14 @@
                 <!-- CAROUSEL 6 -->
                 <div class="project-modal__carousel" data-slide-number="5">
                     <div class="slides6 fade">
-                        <div class="numbertext">1 / 3</div>
                         <img src="img/legatum.png" alt="Legatum app screenshot">
                     </div>
                     
                     <div class="slides6 fade">
-                        <div class="numbertext">2 / 3</div>
                         <img src="img/landmrk_cover.png" alt="Legatum app screenshot">
                     </div>
 
                     <div class="slides6 fade">
-                        <div class="numbertext">3 / 3</div>
                         <img src="img/tortamigo.png" alt="Legatum app screenshot">
                     </div>
 
@@ -408,14 +420,23 @@
                     <a class="next">&#10095</a>
 
                     <!-- Indicators -->
-                    <div style="text-align:center">
+                    <div class="indicator-group">
                         <span class="indicator" data-number="1"></span>
                         <span class="indicator" data-number="2"></span>
                         <span class="indicator" data-number="3"></span>
                     </div>
                 </div>
                 <div class="project-modal__body">
-                    <p>Hello, modally world 6</p>
+                    <h2>LandMrk</h2>
+                    <h3>Explore history by taking a tour in augmented reality</h3>
+                    <p>
+                        Use your phone to explore your surroundings in augmented reality 
+                        and learn about the world through an interactive, community powered 
+                        wiki. I contributed to this collaborative project by integrating the 
+                        Google Maps API and allowing users to read or create publicly viewable 
+                        descriptions of their locations based on their geolocation. 
+                    </p>
+                    <a href="#" class="btn btn--project-view">View</a>
                     <span class="close">&times;</span>
                 </div>
             </div>

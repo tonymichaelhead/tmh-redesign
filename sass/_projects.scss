@@ -206,12 +206,13 @@
         font-size: 3.4rem;
         text-align: left;
         // font-weight: 600;
-        border-bottom: 3px solid #817e7e;
+        border-bottom: 2px solid #817e7e;
         display: inline;
         color: #424141;
     }
 
     h3 {
+        letter-spacing: 1px;
         font-size: 2rem;
         text-align: left;
         margin-top: 1rem;
@@ -282,6 +283,11 @@
     padding: 8px 12px;
     position: absolute;
     top: 0;
+}
+
+.indicator-group {
+    text-align: center;
+    margin-top: 8px;
 }
 
 .indicator {

@@ -21,6 +21,17 @@ h4 {
     width: 13rem;
     margin-top: 2.6rem;
     cursor: pointer;
+    color: $color-primary;
+}
+
+.btn--project-view {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 10px 42px;
+    font-weight: bold;
+    margin: 36px 0 0 0;
+    display: inline-block;
 }
 
 ion-icon {

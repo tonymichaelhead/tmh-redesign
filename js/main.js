@@ -12,13 +12,13 @@ document.getElementById('nav--1')
     .addEventListener('click', filterProjects.bind(shuffleInstance, 'all'));
 
 document.getElementById('nav--2')
-    .addEventListener('click', filterProjects.bind(shuffleInstance, 'react'));
+    .addEventListener('click', filterProjects.bind(shuffleInstance, 'javascript'));
 
 document.getElementById('nav--3')
-    .addEventListener('click', filterProjects.bind(shuffleInstance, ''));
+    .addEventListener('click', filterProjects.bind(shuffleInstance, 'react'));
 
 document.getElementById('nav--4')
-    .addEventListener('click', filterProjects.bind(shuffleInstance, ''));
+    .addEventListener('click', filterProjects.bind(shuffleInstance, 'games'));
 
 
 // METHODS

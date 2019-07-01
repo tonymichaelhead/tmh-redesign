@@ -48,6 +48,7 @@
         color: $color-primary;
         font-size: 3.2rem;
         text-transform: lowercase;
+        transition: all .3s;
     }
 
     &__link:hover {

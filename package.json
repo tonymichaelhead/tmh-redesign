@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server",
+    "devserver": "live-server --browser=firefox",
     "browserify": "watchify js/main.js -o js/bundle.js",
     "start": "npm-run-all --parallel devserver watch:sass browserify",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",

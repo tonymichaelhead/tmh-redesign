@@ -18,6 +18,11 @@ $font-primary: 'PT Sans Caption', sans-serif;
 $bp-largest: 75em; // 1200px
 $bp-large: 60em; // 960px
 
+::placeholder {
+    opacity: 1; /* Firefox */
+    color: #807478;
+}
+
 *,
 *::before,
 *::after {
