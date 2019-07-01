@@ -94,7 +94,11 @@ function showSlides(n, no) {
     }
 
     x[slideIndex[no]-1].style.display = 'block';
-    indicators[slideIndex[no]-1].className += ' active-slide';
+    
+    // Some carousels will only have one image, and no indicator dots
+    if (indicators[slideIndex[no]-1]) {
+        indicators[slideIndex[no]-1].className += ' active-slide';
+    }
 }
 
 

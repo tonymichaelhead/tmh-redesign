@@ -377,12 +377,16 @@ ion-icon {
           object-fit: cover;
           transition: all .2s; }
         .projects__container__grid__preview .picture-item__overlay {
-          display: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           position: absolute;
           top: 0;
           left: 0;
           height: 100%;
-          width: 100%; }
+          width: 100%;
+          opacity: 0;
+          transition: opacity .3s; }
           .projects__container__grid__preview .picture-item__overlay--background {
             z-index: 0;
             position: absolute;
@@ -394,9 +398,7 @@ ion-icon {
             display: flex;
             flex-direction: column; }
         .projects__container__grid__preview:hover .picture-item__overlay {
-          display: flex;
-          align-items: center;
-          justify-content: center; }
+          opacity: 1; }
         .projects__container__grid__preview:hover img {
           filter: blur(10px) brightness(20%); }
       .projects__container__grid .my-sizer-element {
@@ -451,6 +453,12 @@ ion-icon {
     max-width: 81vh;
     color: #1b1b1b;
     font-size: 1.6rem; }
+    @media screen and (max-width: 622px) {
+      .project-modal__content {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto; } }
   .project-modal .close {
     color: #aaa;
     position: absolute;
@@ -458,6 +466,10 @@ ion-icon {
     bottom: 0%;
     font-size: 3.5rem;
     font-weight: bold; }
+    @media screen and (max-width: 622px) {
+      .project-modal .close {
+        font-size: 7rem;
+        right: 5%; } }
   .project-modal .close:hover,
   .project-modal .close:focus {
     color: black;

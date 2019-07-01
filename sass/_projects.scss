@@ -68,12 +68,17 @@
                 }
 
                 .picture-item__overlay {
-                    display: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     position: absolute;
                     top: 0;
                     left: 0;
                     height: 100%;
-                    width: 100%; 
+                    width: 100%;
+                    opacity: 0;
+
+                    transition: opacity .3s;
                     
                     &--background {
                         z-index: 0;
@@ -94,10 +99,7 @@
                 }
                 
                 &:hover .picture-item__overlay {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center; 
-                    // background-color: green;
+                    opacity: 1;
                 }
 
                 &:hover img {
@@ -180,6 +182,13 @@
         max-width: 81vh;
         color: $color-grey-dark-1;
         font-size: 1.6rem;
+
+        @media screen and (max-width: 622px) { 
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        };
     }
 
     .close {
@@ -189,6 +198,11 @@
         bottom: 0%;
         font-size: 3.5rem;
         font-weight: bold;
+
+        @media screen and (max-width: 622px) { 
+            font-size: 7rem;
+            right: 5%;
+        };
     }
 
     .close:hover,
