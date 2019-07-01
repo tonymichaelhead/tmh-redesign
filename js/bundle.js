@@ -119,7 +119,7 @@ $(document).ready(function(){
         $('.project-modal').hide();
     });
     
-    $(window).on('click', function(event) {
+    $(document).on('click', function(event) {
         // hide all modals
         if (event.target.classList.contains('project-modal')) {
             $('.project-modal').hide();
