@@ -243,7 +243,7 @@ ion-icon {
 .about {
   max-width: 120rem;
   width: 80%;
-  height: 91vh;
+  min-height: 91vh;
   margin: 0 auto;
   color: #1b1b1b;
   font-size: 1.6rem;
@@ -447,7 +447,7 @@ ion-icon {
   .project-modal__content {
     background-color: #fefefe;
     position: relative;
-    margin: 5% auto;
+    margin: 5vh auto;
     max-width: 81vh;
     color: #1b1b1b;
     font-size: 1.6rem; }
