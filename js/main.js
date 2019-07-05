@@ -1,24 +1,24 @@
-// PROJECT NAV
-var Shuffle = require('shufflejs');
-var element = document.querySelector('.projects__container__grid');
-var sizer = element.querySelector('.my-sizer-element');
+// PROJECT NAV // TODO: Add back in once projects section is up
+// var Shuffle = require('shufflejs');
+// var element = document.querySelector('.projects__container__grid');
+// var sizer = element.querySelector('.my-sizer-element');
 
-var shuffleInstance = new Shuffle(element, {
-  itemSelector: '.picture-item',
-  sizer: sizer // could also be a selector: '.my-sizer-element'
-});
+// var shuffleInstance = new Shuffle(element, {
+//   itemSelector: '.picture-item',
+//   sizer: sizer // could also be a selector: '.my-sizer-element'
+// });
 
-document.getElementById('nav--1')
-    .addEventListener('click', filterProjects.bind(shuffleInstance, 'all'));
+// document.getElementById('nav--1')
+//     .addEventListener('click', filterProjects.bind(shuffleInstance, 'all'));
 
-document.getElementById('nav--2')
-    .addEventListener('click', filterProjects.bind(shuffleInstance, 'javascript'));
+// document.getElementById('nav--2')
+//     .addEventListener('click', filterProjects.bind(shuffleInstance, 'javascript'));
 
-document.getElementById('nav--3')
-    .addEventListener('click', filterProjects.bind(shuffleInstance, 'react'));
+// document.getElementById('nav--3')
+//     .addEventListener('click', filterProjects.bind(shuffleInstance, 'react'));
 
-document.getElementById('nav--4')
-    .addEventListener('click', filterProjects.bind(shuffleInstance, 'games'));
+// document.getElementById('nav--4')
+//     .addEventListener('click', filterProjects.bind(shuffleInstance, 'games'));
 
 
 // METHODS
